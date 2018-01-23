@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
-import Message from './Message';
+import List from './List';
+
 
 class App extends React.Component {
   render() {
@@ -11,13 +12,9 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Chirper</h1>
         </header>
+       
 
-        <ul className="list-group">
-          <Message text="more and more text" />
-          <Message text="a little more text than before" />
-          <Message text='werasdfqef' />
-          <Message text={this.props.text} />
-        </ul>
+        <List  />
 
       </div>
     );
