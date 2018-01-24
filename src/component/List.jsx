@@ -10,10 +10,10 @@ class List extends Component {
         this.state = {
             items: [
                 {
-                    value: "hello World"
+                    value: "Sad Larry"
                 },
                 {
-                    value: "goodbye World"
+                    value: "is very Sad!"
                 }
             ]
         }
