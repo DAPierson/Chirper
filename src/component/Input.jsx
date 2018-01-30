@@ -12,8 +12,8 @@ class Input extends Component {
         handleInputChange=(value) => {
             this.setState({ msg: value });
         };
-
-        handleClick(event){
+// onClick can be any func  aslomg as its passed into this component from List
+        handleClick(){
 
          this.props.onClick(this.state.msg)
         }
@@ -35,7 +35,7 @@ class Input extends Component {
                     onChange={(event) => { this.handleInputChange(event.target.value) }} />
 
                 <button type="button" className="btn btn-primary btn-lg btn-block"
-                onClick={(event) => {this.handleClick(event)}}> Chirp It! </button>
+                onClick={() => {this.handleClick()}}> Chirp It! </button>
             </div>
 
         )

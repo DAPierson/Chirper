@@ -42,7 +42,7 @@ class List extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-12 py-2">
-                        <Input onClick={(event) => { this.handleClick(event) }} />
+                        <Input onClick={(value) => { this.handleClick(value) }} />
                     </div>
                 </div>
                 <div className="row">
